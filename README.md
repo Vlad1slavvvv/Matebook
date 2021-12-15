@@ -1,2 +1,2 @@
 # Matebook
-[ссылка на сайт](https://github.com/Vlad1slavvvv/Matebook.git)
+[ссылка на сайт]( https://vlad1slavvvv.github.io/Matebook/)
