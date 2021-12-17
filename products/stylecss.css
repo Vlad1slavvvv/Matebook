@@ -3,14 +3,10 @@
 	margin: 0;
 	padding: 0;
 }
-body{
-	/*position: absolute;
-	height: 100%;*/
-}
 .location img{
 	height: 5vh;
 }
-.left_head{
+.top_header{
 	display: flex;
 	justify-content: space-between;
 	color: white;
@@ -42,7 +38,7 @@ a{
 	align-items: center;	
 }
 .right_head{
-	
+	padding-right: 40px;
 }
 a.phonenum{
 	padding: 10px;
@@ -130,10 +126,10 @@ section img{
 }
 @media screen and (max-width:980px) {
 	.header{
-		
+		min-width: 980px;
 	}
 	section{
-		
+		min-width: 980px;
 	}
 	.buttons{
 		display: flex;
@@ -159,10 +155,11 @@ section img{
 @media screen and (max-width: 575px) {
 section{
     flex-direction: column;
-    
+    inline-size: max-content;
+    min-width: 575px;
 	}
 section img{
-			height: 25vh;
+			height: 35vh;
 		}
 .matebook{
 	border-right: none;
@@ -173,13 +170,10 @@ section img{
 .buttons{
 
 }
-.left_head{
-
+.header{
+	display: flex;
+	min-width: 575px;
 }
-.navigation{
-	margin-left: 0px;
-}
-
 .medium-circle,
 	.big-circle {
 		position: fixed;
