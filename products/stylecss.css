@@ -26,12 +26,31 @@ body{
 
 ul.nav li{
 	display: inline-block;
-	padding-right: 10px;
+	padding-right: 5px;
 
 }
 a{
 	text-decoration: none;
 }
+.nav a {
+	text-decoration:none;
+	line-height: 1; 
+	color:white;
+}
+.nav a:after {
+	display: block;
+	content: "";
+	height: 3px; 
+	width: 0%; 
+	background-color: white; 
+	text-decoration: none;	
+	transition: width 0.4s ease-in-out;
+}
+.nav a:hover:after,
+.nav a:focus:after {
+	width: 100%;
+}
+
 .navigation{
 	position: relative;
 	margin-left: 70px;
@@ -46,6 +65,7 @@ a{
 }
 a.phonenum{
 	padding: 10px;
+	color: white;
 }
 
 section{
@@ -75,17 +95,14 @@ section img{
 }
 .matebook{
 	width: 45%;
-	border-right: 1px solid black;
-	
+	border-right: 1px solid black;	
 }
 .matepad{
 	width: 45%;
 }
 .vision{
 	width: 45%;
-	border-right: 1px solid black;
-
-	
+	border-right: 1px solid black;	
 }
 .watch{
 	width: 45%;
@@ -160,30 +177,55 @@ section img{
 section{
     flex-direction: column;
     
+    
 	}
 section img{
-			height: 25vh;
+			height: 30vh;
 		}
 .matebook{
 	border-right: none;
+	width: 100%;
+}
+.matepad{
+	width: 100%;
 }
 .vision{
 	border-right: none;
+	width: 100%;
+}
+.watch{
+	width: 100%;
 }
 .buttons{
-
+	width: 70%;
+    margin-left: 40px;
 }
 .left_head{
+	flex-direction: column;
+
 
 }
 .navigation{
-	margin-left: 0px;
+	margin-left: 5px;
 }
 
 .medium-circle,
 	.big-circle {
 		position: fixed;
 	}
+.location{
+	flex-wrap: wrap;
+    justify-content: center;
+}
+.right_head{
+	flex-direction: column;
 
+}
+.timework{
+	flex-direction: column;
+}
+a.phonenum{
+	padding: 0;
+}
 }
 	
