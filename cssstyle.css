@@ -168,6 +168,7 @@ nav {
 }
 .container img{
 	width: 100%;
+	height: auto;
 }
 .text_background{
 	position: absolute;
@@ -234,7 +235,7 @@ nav {
 	}
 	.nav-links{
 		flex-direction: column;
-		margin: 10px;
+		margin: 3px;
 	}
 	.presentation{
 		align-content: flex-end;
@@ -261,6 +262,17 @@ nav {
 	.cart{
 		padding-bottom: 10px;
 		margin: -8px;
+	}
+	.text_background{
+		left: 20%;
+		top: 10px
+	}
+	.bottom_text{
+		bottom: 10%;
+    	left: 25%;
+    	font-size: 0.5em;
+    	text-align: center;
+    	width: 60%;
 	}
 
 	}
