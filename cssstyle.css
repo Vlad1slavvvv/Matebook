@@ -303,4 +303,7 @@ nav {
 	.text_background h1 {	
 		font-size: 1.2em;
 	}
+	.container{
+		width: 100%;
+	}
 }
