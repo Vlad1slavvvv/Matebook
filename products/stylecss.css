@@ -140,6 +140,84 @@ section img{
 	height: 80%;
 	opacity: 0.4;
 }
+.delivery{
+	position: relative;
+}
+.delivery img{
+	position: absolute;
+	width: 100%;
+}
+.delivery_text{
+    /* position: absolute; */
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column;
+    align-items: end;
+    
+    right: 100px;
+}
+.delivery_text h2{
+	font-size: 5em;
+	color: #2170a5;
+}
+.delivery_text p{
+	font-size: 3em;
+	color: #2170a5;
+}
+.delivery_buttons {
+    display: flex;
+    top: 20em;
+    right: 6em;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+.button_delivery {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.button_delivery:hover, .delivery_button:focus {
+  color: #fff;
+  outline: 0;
+}
+.button_delivery {
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.button_delivery:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
 /* adaptive*/
 @media screen and (max-width: 1024px) {
 	
@@ -172,7 +250,29 @@ section img{
 	.big-circle {
 		position: fixed;
 	}
+	.delivery_buttons{
+		right: 10px;
+    	top: 11em;
+	}
+	.delivery_text{
+		right: 150px;
+    	align-items: center;
+    	flex-direction: row;
+    	top: 0px;	
     }
+	.delivery_text h2 {
+		font-size: 2em;
+		padding: 5px;
+    }
+    .delivery_text p{
+    	font-size: 2em;
+    	padding: 5px;
+
+    }
+    .button_delivery{
+    	font-size: 1.2em;
+    }
+}
 @media screen and (max-width: 575px) {
 section{
     flex-direction: column;
@@ -226,6 +326,28 @@ section img{
 }
 a.phonenum{
 	padding: 0;
+}
+.delivery_text {
+    right: 40px;
+    align-items: center;
+    top: 0px;
+   	flex-direction: column;
+}
+.delivery_text h2 {
+    font-size: 1em;
+}
+.delivery_text p {
+    font-size: 1em;
+    font-weight: 600;
+}
+.delivery_buttons {
+    right: 0px;
+    top: 6em;
+}
+.button_delivery {
+    padding: 0.4em 0.4em;
+    margin: 10px;
+    font-size: 0.8em;
 }
 }
 	
